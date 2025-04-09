@@ -76,6 +76,7 @@ if miRango == proc1:
     aux = np.zeros(1, dtype=np.int32)
     com.Send(miNum, dest=proc2)
     com.Recv(aux)
+
 if miRango == proc2:
     aux = np.zeros(1, dtype=np.int32)
     com.Send(miNum, dest=proc1)

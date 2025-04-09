@@ -36,3 +36,14 @@ if miRango in Rangos:
    comSub.Bcast(vector, root=0) # todos ejecutan broadcast
 
 print("Proceso %d/%d:" % (miRango,numProcs), vector)
+
+
+###  ------- CONSOLA ------- ###
+# (mpi) $ mpirun -np 5 ./13-Intracomms.py
+# Proceso 0/5: [0 0 0 0]
+# Proceso 1/5: [0 0 0 0]
+# Proceso 2/5: [3 5 5 8]
+# Proceso 3/5: [3 5 5 8]
+# Proceso 4/5: [3 5 5 8]
+### ----------------------- ###
+
