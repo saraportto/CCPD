@@ -18,13 +18,15 @@ if miRango == 0:
 intercom = com.Accept(port,info,root=0)
 numCli = intercom.Get_remote_size()
 
-print("Soy el servidor %d y hay %d clientes" % \
-    (miRango,numCli))
+print("Soy el servidor %d y hay %d clientes" % (miRango,numCli))
 
 for i in range(numCli):
     message = intercom.recv(source=i)
-    print("Soy el servidor %d, y recibo: %s " % \
-        (miRango, message))
+    print("Soy el servidor %d, y recibo: %s " % (miRango, message))
  
 if (miRango==0):
     MPI.Close_port(port)
+
+
+
+    
